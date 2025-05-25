@@ -10,4 +10,4 @@
 
 admin_email = Rails.application.credentials.dig(:admin, :email)
 admin_password = Rails.application.credentials.dig(:admin, :password)
-User.create!(email: admin_email, password: admin_password, password_confirmation: admin_password)
+User.create!(email_address: admin_email, password: admin_password, password_confirmation: admin_password)
